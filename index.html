@@ -6,32 +6,34 @@
     <title>Dan Finn's Personal Site</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center; /* Centers text in the body element */
         }
-        header {
+        header, footer {
             background-color: #007BFF;
             color: white;
             padding: 10px 20px;
-            text-align: center;
         }
         main {
             padding: 20px;
         }
         section {
-            margin-bottom: 20px;
+            margin: 20px auto; /* Centers sections and adds vertical spacing */
             padding: 10px;
             background-color: white;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 80%; /* Controls width of the sections */
+            border-radius: 8px; /* Rounded corners for sections */
+        }
+        h1, h2 {
+            font-weight: normal;
         }
         footer {
             text-align: center;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
         }
     </style>
 </head>
@@ -40,23 +42,25 @@
         <h1>Hi, my name is Dan Finn</h1>
     </header>
     <main>
-        <!-- Bio Section -->
         <section>
             <h2>About Me</h2>
-            <p>I am a graduate of Bishop Timon St. Jude High School, where I had to honor to serve as the captain of the soccer team, demonstrating leadership and teamwork. My passion in computer science as a whole has driven me to finish more advanced courses in C++, C#, and also in cybersecurity, focusing on networking with routers and switched, and a ton of other security essentials. I have also completed intro courses in Python, HTML, assembly language, and some focusing on data structures, which have all benefited my programming skills and abilities.</p>
+            <p>I currently go to Fredonia University, and I am a graduate of Bishop Timon St. Jude High School. I am going to school for Computer Science. My passion in computer science as a whole has driven me to finish more advanced courses in C++, C#, and also in cybersecurity, focusing on networking with routers and switched, and a ton of other security essentials. I have also completed intro courses in Python, HTML, assembly language, and some focusing on data structures, which have all benefited my programming skills and abilities.</p>
             <p>I really do enjoy the challenge of problem solving that coding offers. My daily drive of an hour just to school has built me a strong work ethic. I also enjoy having to maintain my car, as I handle almost all of its simple maintenance and repairs myself.</p>
         </section>
-
-        <!-- Contact Information -->
+        <section>
+            <h2>How I Have Been Involved</h2>
+            <p>During high school, I was the captain of the soccer team and an active member of the AV club, where I gained both leadership and technical skills.</p>
+        </section>
+        <section>
+            <h2>What I Do for Fun</h2>
+            <p>I enjoy doing tons of things from DoorDashing to playing video games. I'm also passionate about programming, whether that's for schoolwork or just as a hobby. I also spend some time working on my car, mostly trying to keep it from having issues on my drive to school but I do enjoy learning how to do it all myself!</p>
+        </section>
         <section>
             <h2>Contact Information</h2>
             <p>School Email: finn1817@fredonia.edu</p>
             <p>Cell Phone: (716) 796-7343</p>
             <p>If I ever decide to add anything else it will be listed right here!</p>
         </section>
-
-        <!-- Add Additional Sections Here -->
-        <!-- Example: Projects, Portfolio, Blog, etc. -->
     </main>
     <footer>
         <p>Thank you for visiting my website!</p>
