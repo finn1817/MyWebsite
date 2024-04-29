@@ -41,27 +41,54 @@
             display: block;
             margin: 0 auto;
         }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Hi, my name is Dan Finn and this is my Website...</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#involvement">Involvement</a></li>
+                <li><a href="#fun">Fun Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>I currently go to Fredonia University, and I am a graduate of Bishop Timon St. Jude High School. I am going to school for Computer Science. My interest in computer science as a whole has driven me to finish more advanced courses in C++, C#, and also in cybersecurity, focusing on networking with routers and switches, and a ton of other security essentials. I have also completed intro courses in Python, HTML, Assembly Language, and some classes focusing on solely data structures, which have all enhanced my programming skills</p>
             <p>I really do enjoy the challenge of problem solving that coding offers. My daily drive of an hour just to school has built me a strong work ethic.</p>
         </section>
-        <section>
+        <section id="involvement">
             <h2>How I Have Been Involved</h2>
             <p>During high school, I was the captain of the soccer team and an active member of the AV club, where I gained both leadership and technical skills.</p>
         </section>
-        <section>
+        <section id="fun">
             <h2>What I Do for Fun</h2>
             <p>I enjoy doing tons of things from DoorDashing to playing video games. I'm also passionate about programming, whether that's for schoolwork or just as a hobby. I also spend some time working on my car, mostly trying to keep it from having issues on my drive to school but I do enjoy learning how to do it all myself!</p>
         </section>
-        <section>
+        <section id="contact">
             <h2>Contact Information</h2>
             <p>School Email: finn1817@fredonia.edu</p>
             <p>Cell Phone: (***)***-**** </p>
