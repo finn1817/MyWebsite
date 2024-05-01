@@ -22,6 +22,7 @@
             padding: 20px;
         }
         section {
+            display: none; /* Hide all sections by default */
             margin: 20px auto; /* Centers sections and adds vertical spacing */
             padding: 10px;
             background-color: white;
@@ -75,7 +76,7 @@
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" style="display: block;"> <!-- Display the first section by default -->
             <h2>About Me</h2>
             <p>I currently go to Fredonia University, and I am a graduate of Bishop Timon St. Jude High School. I am going to school for Computer Science. My interest in computer science as a whole has driven me to finish more advanced courses in C++, C#, and also in cybersecurity, focusing on networking with routers and switches, and a ton of other security essentials. I have also completed intro courses in Python, HTML, Assembly Language, and some classes focusing on solely data structures, which have all enhanced my programming skills</p>
             <p>I really do enjoy the challenge of problem solving that coding offers. My daily drive of an hour just to school has built me a strong work ethic.</p>
@@ -101,5 +102,18 @@
     <footer>
         <p>Thank you for visiting my website!</p>
     </footer>
+    <script>
+        // JavaScript to show/hide sections based on navigation clicks
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                const targetId = this.getAttribute('href').substring(1); // Get target section id
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none'; // Hide all sections
+                });
+                document.getElementById(targetId).style.display = 'block'; // Show target section
+            });
+        });
+    </script>
 </body>
 </html>
